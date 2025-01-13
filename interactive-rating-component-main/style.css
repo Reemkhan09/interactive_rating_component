@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-  Orange: hsl(25, 97%, 53%)
+
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)  */
+
+body{
+    height: 100vh;
+    font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%) ;
+  margin : 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container, .thank-you{
+ 
+ background-color:  hsl(213, 19%, 18%);
+  width: 350px;
+  height: 350px;
+  color: white;
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.main-container img{
+    background-color:  hsla(217, 12%, 63%, 0.151);
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+
+}
+
+.main-container h2{
+    margin: 1rem 0.5rem;
+}
+.main-container p{
+    color: hsl(217, 12%, 63%);
+    padding-left: 0.5rem;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin : 1rem 0.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.main-container .btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    color: hsl(217, 12%, 63%);
+    background-color:hsla(217, 12%, 63%, 0.151) ;
+    cursor: pointer;
+}
+.main-container .btn:hover{
+    background-color:  hsl(25, 97%, 53%);
+}
+.main-container .btn:focus{
+    background-color:hsl(217, 12%, 63%); 
+    color: hsl(216, 12%, 8%);
+}
+
+#submit-btn{
+    width: 90%;
+    padding: 0.7rem;
+    border-radius: 20px;
+    border: none;
+    background-color:  hsl(25, 97%, 53%);
+    margin: 1rem;
+   letter-spacing: 1px; 
+   text-transform: uppercase;
+   font-size: 12px;
+   color: hsla(216, 12%, 8%, 0.819);
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.1s ease-in-out;
+}
+
+#submit-btn:hover{
+    background-color: white;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-you img{
+   display: block;
+   margin : 0 auto 2rem;
+
+}
+
+.thank-you .score{
+    background-color: hsla(217, 12%, 63%, 0.114);
+    color:hsl(25, 97%, 53%);
+    width: fit-content;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+
+    font-size: 12px;
+}
+ 
+.thank-you h3{
+  margin: 1rem 0rem;
+  font-size: 20px;
+}
+
+.thank-you p{
+    font-size: 13px;
+    color:hsl(217, 12%, 63%);
+    width: 92%;
+}
+
+
+.hidden{
+  display: none;
+}
+
+
